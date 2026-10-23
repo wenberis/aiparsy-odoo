@@ -29,7 +29,7 @@ class AiParsyUpload(models.TransientModel):
             "type": "ir.actions.act_window",
             "name": _("Sent to AiParsy"),
             "res_model": "account.move",
-            "view_mode": "tree,form",
+            "view_mode": "list,form",
             "domain": [("id", "in", moves.ids)],
             "context": {"default_move_type": "in_invoice"},
         }
