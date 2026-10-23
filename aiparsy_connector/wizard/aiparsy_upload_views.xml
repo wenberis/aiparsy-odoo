@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="aiparsy_upload_view_form" model="ir.ui.view">
+        <field name="name">aiparsy.upload.form</field>
+        <field name="model">aiparsy.upload</field>
+        <field name="arch" type="xml">
+            <form string="Send scans to AiParsy">
+                <p class="text-muted">Each scan becomes a draft vendor bill. AiParsy recognizes it and, after approval, fills the bill: vendor, number, date, lines and VAT.</p>
+                <field name="attachment_ids" widget="many2many_binary" string="Scans" nolabel="1"/>
+                <footer>
+                    <button name="action_send" type="object" string="Send" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_aiparsy_upload" model="ir.actions.act_window">
+        <field name="name">Send scans to AiParsy</field>
+        <field name="res_model">aiparsy.upload</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="menu_aiparsy_upload" name="Send scans to AiParsy" parent="account.menu_finance_payables"
+              action="action_aiparsy_upload" sequence="2"/>
+</odoo>

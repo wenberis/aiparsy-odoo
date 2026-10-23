@@ -1,0 +1,239 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* aiparsy_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0-20260908\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-23 07:11+0000\n"
+"PO-Revision-Date: 2026-10-23 07:11+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.view_move_form_aiparsy
+msgid "<span class=\"o_stat_text\">AiParsy</span>"
+msgstr "<span class=\"o_stat_text\">AiParsy</span>"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/wizard/aiparsy_upload.py:0
+#, python-format
+msgid "Add the scans to send."
+msgstr "Додайте скани, які треба надіслати."
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_bank_statement_line__aiparsy_status
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_move__aiparsy_status
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_payment__aiparsy_status
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "AiParsy"
+msgstr "AiParsy"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_res_config_settings__aiparsy_api_key
+msgid "AiParsy API key"
+msgstr "API-ключ AiParsy"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/res_config_settings.py:0
+#, python-format
+msgid "AiParsy accepted the API key."
+msgstr "AiParsy прийняв API-ключ."
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_res_config_settings__aiparsy_url
+msgid "AiParsy address"
+msgstr "Адреса AiParsy"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/aiparsy_client.py:0
+#, python-format
+msgid "AiParsy answered with an error (%s): %s"
+msgstr "AiParsy відповів помилкою (%s): %s"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/aiparsy_client.py:0
+#, python-format
+msgid "AiParsy did not accept the API key. Create a new key in AiParsy → API Keys."
+msgstr "AiParsy не прийняв API-ключ. Створіть новий ключ в AiParsy → «API-ключі»."
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/account_move.py:0
+#, python-format
+msgid "AiParsy did not take the file %s."
+msgstr "AiParsy не прийняв файл %s."
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_bank_statement_line__aiparsy_document_id
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_move__aiparsy_document_id
+#: model:ir.model.fields,field_description:aiparsy_connector.field_account_payment__aiparsy_document_id
+msgid "AiParsy document"
+msgstr "Документ AiParsy"
+
+#. module: aiparsy_connector
+#: model:ir.actions.server,name:aiparsy_connector.ir_cron_aiparsy_refresh_ir_actions_server
+msgid "AiParsy: refresh recognition status"
+msgstr "AiParsy: оновлення статусу розпізнавання"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields.selection,name:aiparsy_connector.selection__account_move__aiparsy_status__approved
+msgid "Approved"
+msgstr "Затверджено"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/account_move.py:0
+#, python-format
+msgid "Attach the scan of the document to the bill first."
+msgstr "Спершу прикріпіть до рахунку скан документа."
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Bills back to Odoo"
+msgstr "Рахунки назад в Odoo"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.aiparsy_upload_view_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Check connection"
+msgstr "Перевірити підключення"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/aiparsy_client.py:0
+#, python-format
+msgid "Could not connect to AiParsy (%s): %s"
+msgstr "Не вдалося підключитися до AiParsy (%s): %s"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Create a free AiParsy account"
+msgstr "Створити безкоштовний обліковий запис AiParsy"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_res_config_settings__aiparsy_odoo_db
+msgid "Database"
+msgstr "База даних"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.aiparsy_upload_view_form
+msgid "Each scan becomes a draft vendor bill. AiParsy recognizes it and, after approval, fills the bill: vendor, number, date, lines and VAT."
+msgstr "Кожен скан стане чернеткою рахунку постачальника. AiParsy розпізнає його і після затвердження заповнить рахунок: постачальника, номер, дату, рядки й ПДВ."
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/aiparsy_client.py:0
+#, python-format
+msgid "Enter the AiParsy API key in Accounting → Configuration → Settings → AiParsy."
+msgstr "Вкажіть API-ключ AiParsy: Бухоблік → Налаштування → Налаштування → AiParsy."
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Enter these in AiParsy → Accounting systems → Odoo, with an Odoo user's login and API key."
+msgstr "Вкажіть їх в AiParsy → «Облікові системи» → Odoo разом із логіном і ключем API користувача Odoo."
+
+#. module: aiparsy_connector
+#: model:ir.model.fields.selection,name:aiparsy_connector.selection__account_move__aiparsy_status__filled
+msgid "Filled by AiParsy"
+msgstr "Заповнено AiParsy"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.view_account_invoice_filter_aiparsy
+msgid "From AiParsy"
+msgstr "З AiParsy"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields.selection,name:aiparsy_connector.selection__account_move__aiparsy_status__error
+msgid "Not recognized"
+msgstr "Не розпізнано"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_res_config_settings__aiparsy_odoo_url
+msgid "Odoo address"
+msgstr "Адреса Odoo"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/account_move.py:0
+#, python-format
+msgid "Only a draft bill can be recognized."
+msgstr "Розпізнати можна лише чернетку рахунку."
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Recognition of scans"
+msgstr "Розпізнавання сканів"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.view_move_form_aiparsy
+msgid "Recognize with AiParsy"
+msgstr "Розпізнати в AiParsy"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields.selection,name:aiparsy_connector.selection__account_move__aiparsy_status__recognized
+msgid "Recognized, to check"
+msgstr "Розпізнано, на перевірці"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields.selection,name:aiparsy_connector.selection__account_move__aiparsy_status__sent
+msgid "Recognizing"
+msgstr "Розпізнається"
+
+#. module: aiparsy_connector
+#: model:ir.model.fields,field_description:aiparsy_connector.field_aiparsy_upload__attachment_ids
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.aiparsy_upload_view_form
+msgid "Scans"
+msgstr "Скани"
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.aiparsy_upload_view_form
+msgid "Send"
+msgstr "Надіслати"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/wizard/aiparsy_upload.py:0
+#, python-format
+msgid "Send at most %s files at a time."
+msgstr "Надсилайте не більше %s файлів за раз."
+
+#. module: aiparsy_connector
+#: model:ir.actions.act_window,name:aiparsy_connector.action_aiparsy_upload
+#: model:ir.model,name:aiparsy_connector.model_aiparsy_upload
+#: model:ir.ui.menu,name:aiparsy_connector.menu_aiparsy_upload
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.aiparsy_upload_view_form
+msgid "Send scans to AiParsy"
+msgstr "Надіслати скани в AiParsy"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/wizard/aiparsy_upload.py:0
+#, python-format
+msgid "Sent to AiParsy"
+msgstr "Надіслано в AiParsy"
+
+#. module: aiparsy_connector
+#. odoo-python
+#: code:addons/aiparsy_connector/models/account_move.py:0
+#, python-format
+msgid "Sent to AiParsy for recognition (document #%s)."
+msgstr "Надіслано в AiParsy на розпізнавання (документ #%s)."
+
+#. module: aiparsy_connector
+#: model_terms:ir.ui.view,arch_db:aiparsy_connector.res_config_settings_view_form_aiparsy
+msgid "Vendor bills, waybills and acts are recognized by AiParsy and come back as filled draft bills."
+msgstr "Рахунки, видаткові накладні й акти розпізнає AiParsy, і вони повертаються заповненими чернетками рахунків."

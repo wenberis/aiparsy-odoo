@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_aiparsy" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.aiparsy</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='account']" position="inside">
+                <block title="AiParsy" name="aiparsy_setting_container">
+                    <setting string="Recognition of scans" help="Vendor bills, waybills and acts are recognized by AiParsy and come back as filled draft bills.">
+                        <div class="content-group">
+                            <div class="row mt8">
+                                <label for="aiparsy_url" class="col-lg-4 o_light_label"/>
+                                <field name="aiparsy_url"/>
+                            </div>
+                            <div class="row">
+                                <label for="aiparsy_api_key" class="col-lg-4 o_light_label"/>
+                                <field name="aiparsy_api_key" password="True"/>
+                            </div>
+                            <div class="mt8">
+                                <button name="action_aiparsy_check" type="object" string="Check connection" class="btn-link" icon="oi-arrow-right"/>
+                            </div>
+                            <div>
+                                <a href="https://aiparsy.com/register" target="_blank">Create a free AiParsy account</a>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting string="Bills back to Odoo" help="Enter these in AiParsy → Accounting systems → Odoo, with an Odoo user's login and API key.">
+                        <div class="content-group">
+                            <div class="row mt8">
+                                <label for="aiparsy_odoo_url" class="col-lg-4 o_light_label"/>
+                                <field name="aiparsy_odoo_url"/>
+                            </div>
+                            <div class="row">
+                                <label for="aiparsy_odoo_db" class="col-lg-4 o_light_label"/>
+                                <field name="aiparsy_odoo_db"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

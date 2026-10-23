@@ -1,0 +1,66 @@
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h2 class="oe_slogan" style="color:#1c2547">Vendor bills from scans, filled by AiParsy</h2>
+        <h3 class="oe_slogan">Ukrainian waybills, acts of work and supplier invoices become draft vendor bills with the vendor, number, date, lines and VAT</h3>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">How it works</h3>
+        <ol style="font-size:16px;line-height:1.7">
+            <li>Upload a scan or photo to a draft vendor bill and press <b>Recognize with AiParsy</b> — or send a batch of scans at once from <i>Vendors → Send scans to AiParsy</i>.</li>
+            <li>AiParsy recognizes the document. The accountant checks it in AiParsy and approves it.</li>
+            <li>AiParsy fills the same draft bill in Odoo: the vendor (found by ЄДРПОУ or created), the bill number and date, the lines with prices without VAT and the Odoo purchase tax of the right rate (20, 14, 7 or 0 %).</li>
+        </ol>
+        <p style="font-size:16px">Each bill shows its AiParsy status: recognizing, recognized, approved, filled. A scheduled action refreshes the statuses every 10 minutes; the <b>AiParsy</b> button opens the document in AiParsy.</p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">A bill filled by AiParsy</h3>
+        <div class="oe_demo oe_screenshot">
+            <img src="screenshot_filled.png" alt="A draft vendor bill filled by AiParsy" style="max-width:100%"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Statuses in the list of bills</h3>
+        <div class="oe_demo oe_screenshot">
+            <img src="screenshot_list.png" alt="The AiParsy column in the vendor bills list" style="max-width:100%"/>
+        </div>
+        <h3 class="oe_slogan" style="margin-top:32px">Many scans at once</h3>
+        <div class="oe_demo oe_screenshot">
+            <img src="screenshot_upload.png" alt="Sending several scans to AiParsy" style="max-width:100%"/>
+        </div>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Setup in five minutes</h3>
+        <ol style="font-size:16px;line-height:1.7">
+            <li>Create a free account at <a href="https://aiparsy.com/register" target="_blank">aiparsy.com</a>.</li>
+            <li>In AiParsy open <i>API Keys</i> and create a key.</li>
+            <li>In Odoo: <i>Accounting → Configuration → Settings → AiParsy</i> — paste the key and press <b>Check connection</b>.</li>
+            <li>In Odoo create an API key for the user AiParsy will work as (<i>My Profile → Account Security → New API Key</i>).</li>
+            <li>In AiParsy open <i>Accounting systems → Odoo</i> and enter the Odoo address and database shown in the settings, the login and that API key.</li>
+        </ol>
+        <div class="oe_demo oe_screenshot">
+            <img src="screenshot_settings.png" alt="AiParsy settings in Odoo" style="max-width:100%"/>
+        </div>
+        <p style="font-size:15px;margin-top:16px">Recognition uses the pages of your AiParsy plan. AiParsy needs to reach your Odoo over the internet to fill the bills (Odoo.sh or your own server with a public address).
+            Step-by-step guide: <a href="https://aiparsy.com/blog/odoo" target="_blank">aiparsy.com/blog/odoo</a>.</p>
+    </div>
+</section>
+
+<section class="oe_container">
+    <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">Українською</h3>
+        <p style="font-size:16px">Модуль надсилає скани видаткових накладних, актів і рахунків постачальників в AiParsy. Після розпізнавання й затвердження AiParsy заповнює чернетку рахунку в Odoo: постачальника за ЄДРПОУ, номер і дату, рядки з цінами без ПДВ і податок потрібної ставки. Інтерфейс модуля перекладено українською.</p>
+        <p style="font-size:16px">Інструкція з підключення: <a href="https://aiparsy.com/blog/odoo" target="_blank">aiparsy.com/blog/odoo</a>.</p>
+    </div>
+</section>
