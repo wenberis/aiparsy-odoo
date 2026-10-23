@@ -2,7 +2,7 @@
     "name": "AiParsy — Recognize Vendor Bills from Scans",
     "summary": "Ukrainian vendor bills, waybills and acts: send a scan to AiParsy, "
     "get a filled draft bill with partner, lines and VAT",
-    "version": "17.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Accounting/Accounting",
     "author": "AiParsy",
     "website": "https://aiparsy.com/blog/odoo",
